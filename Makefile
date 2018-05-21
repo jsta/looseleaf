@@ -87,14 +87,6 @@ lesson-md : ${RMD_DST}
 ${RMD_DST} : ${RMD_SRC}
 	@bin/knit_lessons.sh ${RMD_SRC}
 
-## lesson-check     : validate lesson Markdown.
-lesson-check :
-	@bin/lesson_check.py -s . -p ${PARSER} -r _includes/links.md
-
-## lesson-check-all : validate lesson Markdown, checking line lengths and trailing whitespace.
-lesson-check-all :
-	@bin/lesson_check.py -s . -p ${PARSER} -l -w --permissive
-
 ## unittest         : run unit tests on checking tools.
 unittest :
 	python bin/test_lesson_check.py

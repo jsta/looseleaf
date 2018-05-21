@@ -5,7 +5,7 @@ permalink: index.html  # Is the only page that don't follow the partner /:path/i
 ---
 FIXME: home page introduction
 
-> ## Prerequisites
+> ## Dependencies
 >
 > FIXME
 {: .prereq}
