@@ -1,0 +1,24 @@
+---
+title: "Analyze diamonds"
+questions:
+- "Do more carats command a higher price?"
+objectives:
+- "Plot price versus carat."
+keypoints:
+- "More carats command a higher price."
+---
+
+```{r echo=FALSE}
+source("../bin/chunk-options.R")
+```
+
+```{r }
+library(ggplot2)
+
+knitr::kable(head(diamonds))
+```
+
+```{r carat_vs_price}
+ggplot() + 
+  geom_point(data = diamonds, aes(x = carat, y = price))
+```

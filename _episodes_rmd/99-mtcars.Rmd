@@ -1,0 +1,24 @@
+---
+title: "Analyze mtcars"
+questions:
+- "Do heavier cars have worse mpg?"
+objectives:
+- "Plot car weight versus mpg."
+keypoints:
+- "Heavier cars have worse mpg."
+---
+
+```{r echo=FALSE}
+source("../bin/chunk-options.R")
+```
+
+```{r }
+library(ggplot2)
+
+knitr::kable(head(mtcars))
+```
+
+```{r mpg_vs_wt}
+ggplot() + 
+  geom_point(data = mtcars, aes(x = wt, y = mpg))
+```
