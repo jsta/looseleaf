@@ -3,7 +3,7 @@
   Days are displayed if at least one episode has 'start = true'.
 {% endcomment %}
 <div class="syllabus">
-  <h2 id="schedule">Schedule</h2>
+  <h2 id="schedule">Pages</h2>
 
   {% assign lesson_number = 0 %}
   {% assign day = 0 %}
@@ -18,7 +18,7 @@
     {% if multiday %}<td class="col-md-1"></td>{% endif %}
     <td class="{% if multiday %}col-md-1{% else %}col-md-2{% endif %}"></td>
     <td class="col-md-3"><a href="{{ page.root }}{% link setup.md %}">Setup</a></td>
-    <td class="col-md-7">Download files required for the lesson</td>
+    <td class="col-md-7">Download files required for this looseleaf</td>
   </tr>
   {% for episode in site.episodes %}
     {% if episode.start %} {% comment %} Starting a new day? {% endcomment %}
