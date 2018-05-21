@@ -3,4 +3,8 @@ layout: page
 title: Setup
 root: .
 ---
-FIXME
+> ## Dependencies
+>
+> * R
+> * rmarkdown
+{: .prereq}
