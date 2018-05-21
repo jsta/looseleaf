@@ -12,15 +12,15 @@ Separately render and index a collection of rmarkdown files
 
 * Selective caching is difficult
 
-## Roadmap
-
- * adjust html templates in `_layouts` and `_includes_`
- 
- * remove mention of _lessons_
-
 ## Workflow
 
 * **Do not** edit the auto-generated files in `_site`
+
+* Create an Rmd file with the yaml header and chunk options in the template
+
+* `make lessons-md`
+
+* `make serve`
 
 ## Maintainer(s)
 
