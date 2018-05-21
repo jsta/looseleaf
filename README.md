@@ -8,6 +8,10 @@ Separately render and index a collection of rmarkdown files
  
  * remove mention of _lessons_
 
+## Workflow
+
+* **Do not** edit the auto-generated files in `_site`
+
 ## Maintainer(s)
 
 * [jsta](https://github.com/jsta)
