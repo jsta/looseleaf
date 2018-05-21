@@ -1,4 +1,6 @@
-# looseleaf
+# looseleaf :leaves:
+
+Separately render and index a collection of rmarkdown files
 
 ## Roadmap
 
@@ -9,3 +11,7 @@
 ## Maintainer(s)
 
 * [jsta](https://github.com/jsta)
+
+## Prior art
+
+https://github.com/swcarpentry/styles
