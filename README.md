@@ -1,6 +1,10 @@
 # looseleaf
 
-## Contributing
+## Roadmap
+
+ * adjust html templates in `_layouts`
+ 
+ * remove mention of _lessons_
 
 ## Maintainer(s)
 
