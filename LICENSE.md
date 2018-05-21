@@ -1,13 +1,13 @@
 ---
 layout: page
-title: "Licenses"
+title: "License"
 root: .
 ---
 
 ## Software
 
 Except where otherwise noted, the example programs and other software 
-are made available under the [OSI][osi]-approved [MIT license][mit-license].
+are made available under the OSI-approved MIT license.
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
