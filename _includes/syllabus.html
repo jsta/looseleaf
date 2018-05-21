@@ -3,7 +3,6 @@
   Days are displayed if at least one episode has 'start = true'.
 {% endcomment %}
 <div class="syllabus">
-  <h2 id="schedule">Pages</h2>
 
   {% assign lesson_number = 0 %}
   {% assign day = 0 %}
@@ -28,8 +27,7 @@
         {% assign minutes = current | modulo: 60 %}
         <tr>
           {% if multiday %}<td class="col-md-1"></td>{% endif %}
-          <td class="{% if multiday %}col-md-1{% else %}col-md-2{% endif %}">{% if hours < 10 %}0{% endif %}{{ hours }}:{% if minutes < 10 %}0{% endif %}{{ minutes }}</td>
-          <td class="col-md-3">Finish</td>
+          <td class="{% if multiday %}col-md-1{% else %}col-md-2{% endif %}"></td>
           <td class="col-md-7"></td>
         </tr>
       {% endif %}
@@ -38,8 +36,8 @@
     {% assign hours = current | divided_by: 60 %}
     {% assign minutes = current | modulo: 60 %}
     <tr>
-      {% if multiday %}<td class="col-md-1">{% if episode.start %}Day {{ day }}{% endif %}</td>{% endif %}
-      <td class="{% if multiday %}col-md-1{% else %}col-md-2{% endif %}">{% if hours < 10 %}0{% endif %}{{ hours }}:{% if minutes < 10 %}0{% endif %}{{ minutes }}</td>
+      {% if multiday %}<td class="col-md-1"></td>{% endif %}
+      <td class="{% if multiday %}col-md-1{% else %}col-md-2{% endif %}"></td>
       <td class="col-md-3">
         {% assign lesson_number = lesson_number | plus: 1 %}
 	{{ lesson_number }}. <a href="{{ page.root }}{{ episode.url }}">{{ episode.title }}</a>
@@ -63,12 +61,6 @@
   {% endfor %}
   {% assign hours = current | divided_by: 60 %}
   {% assign minutes = current | modulo: 60 %}
-  <tr>
-    {% if multiday %}<td class="col-md-1"></td>{% endif %}
-    <td class="{% if multiday %}col-md-1{% else %}col-md-2{% endif %}">{% if hours < 10 %}0{% endif %}{{ hours }}:{% if minutes < 10 %}0{% endif %}{{ minutes }}</td>
-    <td class="col-md-3">Finish</td>
-    <td class="col-md-7"></td>
-  </tr>
   </table>
 
 </div>
