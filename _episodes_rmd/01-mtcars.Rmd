@@ -1,9 +1,9 @@
 ---
-title: "Introduction"
+title: "mtcars"
 teaching: 0
 exercises: 0
 questions:
-- "Key question"
+- "Analyze mtcars"
 objectives:
 - "First objective."
 keypoints:
