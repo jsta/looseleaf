@@ -6,12 +6,12 @@
 carpentry: "swc"
 
 # Overall title for pages.
-title: "Title"
+title: "Separately render and index a collection of rmarkdown files"
 
 # Contact.  This *must* include the protocol: if it's an email
 # address, it must look like "mailto:lessons@software-carpentry.org",
 # or if it's a URL, "https://gitter.im/username/ProjectName".
-email: "mailto:lessons@software-carpentry.org"
+email: "mailto:stachel2@msu.edu"
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).

@@ -4,7 +4,7 @@ Separately render and index a collection of rmarkdown files
 
 ## Roadmap
 
- * adjust html templates in `_layouts`
+ * adjust html templates in `_layouts` and `_includes_`
  
  * remove mention of _lessons_
 
