@@ -12,7 +12,7 @@ BOILERPLATE = (
     'AUTHORS',
     'CITATION',
     'CONTRIBUTING.md',
-    'README.md'
+    'README.md',
     '_config.yml',
     '_episodes/01-introduction.md',
     '_extras/about.md',
@@ -49,3 +49,8 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+def clean():
+    for path in BOILERPLATE:
+        os.remove("../{}".format(path))
+        # python -c 'from lesson_initialize import clean; clean()'
