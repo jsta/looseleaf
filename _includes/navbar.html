@@ -37,9 +37,6 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
 
-	{% comment %} Always show code of conduct. {% endcomment %}
-        <li><a href="{{ page.root }}{% link CONDUCT.md %}">Code of Conduct</a></li>
-
         {% if site.kind == "lesson" %}
 	{% comment %} Show setup instructions. {% endcomment %}
         <li><a href="{{ page.root }}{% link setup.md %}">Setup</a></li>
