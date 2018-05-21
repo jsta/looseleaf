@@ -9,7 +9,7 @@
 [cran-checkpoint]: https://cran.r-project.org/package=checkpoint
 [cran-knitr]: https://cran.r-project.org/package=knitr
 [cran-stringr]: https://cran.r-project.org/package=stringr
-[email]: mailto:lessons@software-carpentry.org
+[email]: mailto:stachel2@msu.edu
 [github-importer]: https://import.github.com/
 [importer]: https://github.com/new/import
 [jekyll-collection]: https://jekyllrb.com/docs/collections/
