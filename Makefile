@@ -17,11 +17,11 @@ commands :
 	@grep -h -E '^##' ${MAKEFILES} | sed -e 's/## //g'
 
 ## serve            : run a local server.
-serve : lesson-md
+serve : looseleaf-md
 	${JEKYLL} serve
 
 ## site             : build files but do not run a server.
-site : lesson-md
+site : looseleaf-md
 	${JEKYLL} build
 
 # repo-check        : check repository settings.
@@ -54,7 +54,7 @@ workshop-check :
 ## ----------------------------------------
 ## Commands specific to lesson websites.
 
-.PHONY : lesson-check lesson-md lesson-files lesson-fixme
+.PHONY : lesson-check looseleaf-md lesson-files lesson-fixme
 
 # RMarkdown files
 RMD_SRC = $(wildcard _episodes_rmd/??-*.Rmd)
@@ -81,7 +81,7 @@ HTML_DST = \
   ${DST}/license/index.html
 
 ## lesson-md        : convert Rmarkdown files to markdown
-lesson-md : ${RMD_DST}
+looseleaf-md : ${RMD_DST}
 
 _episodes/%.md: _episodes_rmd/%.Rmd
 	@bin/knit_lessons.sh $< $@
