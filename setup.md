@@ -11,9 +11,9 @@ root: .
 >   * stringr
 >   * checkpoint
 >
-> * Ruby
-> * RubyGems
-> * Jekyll
+> * [Ruby](swc_instructions)
+> * [RubyGems](swc_instructions)
+> * [Jekyll](swc_instructions)
 {: .prereq}
 
-See also [https://swcarpentry.github.io/lesson-example/setup.html#optional-jekyll-setup-for-lesson-development](https://swcarpentry.github.io/lesson-example/setup.html#optional-jekyll-setup-for-lesson-development)
+[swc_instructions]: https://swcarpentry.github.io/lesson-example/setup.html#optional-jekyll-setup-for-lesson-development
