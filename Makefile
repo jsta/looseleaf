@@ -63,6 +63,7 @@ RMD_DST = $(patsubst _episodes_rmd/%.Rmd,_episodes/%.md,$(RMD_SRC))
 # Lesson source files in the order they appear in the navigation menu.
 MARKDOWN_SRC = \
   index.md \
+  CONDUCT.md \
   setup.md \
   $(sort $(wildcard _episodes/*.md)) \
   reference.md \
@@ -82,9 +83,20 @@ HTML_DST = \
 ## lesson-md        : convert Rmarkdown files to markdown
 lesson-md : ${RMD_DST}
 
-# Use of .NOTPARALLEL makes rule execute only once
-${RMD_DST} : ${RMD_SRC}
-	@bin/knit_lessons.sh ${RMD_SRC}
+_episodes/%.md: _episodes_rmd/%.Rmd
+	@bin/knit_lessons.sh $< $@
+
+## lesson-check     : validate lesson Markdown.
+lesson-check :
+	@bin/lesson_check.py -s . -p ${PARSER} -r _includes/links.md
+
+## lesson-check-all : validate lesson Markdown, checking line lengths and trailing whitespace.
+lesson-check-all :
+	@bin/lesson_check.py -s . -p ${PARSER} -l -w
+
+## lesson-figures   : re-generate inclusion displaying all figures.
+lesson-figures :
+	@bin/extract_figures.py -p ${PARSER} ${MARKDOWN_SRC} > _includes/all_figures.html
 
 ## unittest         : run unit tests on checking tools.
 unittest :
