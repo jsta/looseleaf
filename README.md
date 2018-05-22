@@ -4,17 +4,23 @@
 
 Separately render and index a collection of rmarkdown files
 
-## Philosophy
+## Philosophy 
 
-`R notebooks` are ok but it is difficult to manage a collection of them.
+Keep track of your data explorations with minimal effort
 
-`bookdown` is great except for a few key downsides:
+## Features
 
-* Chunk labels cannot be duplicated in different chapters
+* `rmarkdown` files are only re-built if they have changed since the last rebuild
 
-* All chapters are rendered together so you cannot turn off evaluation in a chapter-level config chunk
+* turn off chapter/page evaluation or message printing with a single `knitr` hook
 
-* Selective caching is difficult so build times can be extremely long
+* a `looseleaf` build will continue despite evaluation errors
+
+### Why not X?
+
+`R notebooks` are ok but it is difficult to manage a linked collection
+
+`bookdown` is great except for a few key downsides arising from the fact that chapters are concatenated on render so that chunk labels cannot be duplicated, selective caching becomes difficult, and there can be no chapter level knitr hooks.
 
 ## Installation
 
@@ -30,7 +36,7 @@ See https://jsta.github.io/looseleaf/setup.html
 
 * Create an Rmd file with the yaml header and chunk options in the template
 
-* `make lesson-md`
+* `make looseleaf-md`
 
 * `make serve`
 
