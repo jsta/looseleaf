@@ -1,5 +1,7 @@
 # looseleaf :leaves:
 
+[![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+
 Separately render and index a collection of rmarkdown files
 
 ## Philosophy
