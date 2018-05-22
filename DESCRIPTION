@@ -1,5 +1,5 @@
 Package: looseleaf
 Title: Does not matter.
 Version: 0.0.1
-Imports: 
-Remotes: thomasp85/patchwork
+Imports: rmarkdown, knitr, stringr, checkpoint
+Remotes: 
