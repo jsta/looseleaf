@@ -12,9 +12,13 @@ Separately render and index a collection of rmarkdown files
 
 * Selective caching is difficult
 
-## Workflow
+## Usage
+
+* Clone this repo
 
 * **Do not** edit the auto-generated files in `_site`
+
+### Workflow
 
 * Create an Rmd file with the yaml header and chunk options in the template
 
@@ -22,9 +26,7 @@ Separately render and index a collection of rmarkdown files
 
 * `make serve`
 
-## Maintainer(s)
-
-* [jsta](https://github.com/jsta)
+## Customization
 
 ## Prior art
 
