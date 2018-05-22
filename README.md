@@ -30,7 +30,7 @@ See https://jsta.github.io/looseleaf/setup.html
 
 * Create an Rmd file with the yaml header and chunk options in the template
 
-* `make lessons-md`
+* `make lesson-md`
 
 * `make serve`
 
