@@ -12,7 +12,7 @@ keypoints:
 source("../bin/chunk-options.R")
 ```
 
-```{r }
+```{r preview}
 library(ggplot2)
 
 knitr::kable(head(mtcars))
