@@ -12,13 +12,15 @@ Keep track of your data explorations with minimal effort
 
 * `rmarkdown` files are only re-built if they have changed since the last rebuild
 
-* turn off chapter/page evaluation or message printing with a single `knitr` hook
+* turn off chapter/page evaluation (or message printing) with a single `knitr` hook
 
 * a `looseleaf` build will continue despite evaluation errors
 
+* keep track of `R` package dependencies in `DESCRIPTION`
+
 ### Why not X?
 
-`R notebooks` are ok but it is difficult to manage a linked collection
+`R notebooks` are ok but it is difficult to manage a linked collection.
 
 `bookdown` is great except for a few key downsides arising from the fact that chapters are concatenated on render so that chunk labels cannot be duplicated, selective caching becomes difficult, and there can be no chapter level knitr hooks.
 

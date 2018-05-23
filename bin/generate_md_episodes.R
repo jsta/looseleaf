@@ -24,11 +24,11 @@ generate_md_episodes <- function() {
   }
 
   # install required Github packages
-  if(require("remotes")){
-    remotes::install_deps()
-  }else{
-    stop("The remotes package is required to build the looseleaf.")
-  }
+  # if(require("remotes")){
+  #   remotes::install_deps()
+  # }else{
+  #   stop("The remotes package is required to build the looseleaf.")
+  # }
 
   ## get the Rmd file to process from the command line, and generate the path for their respective outputs
   args  <- commandArgs(trailingOnly = TRUE)
