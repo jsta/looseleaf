@@ -1,0 +1,14 @@
+image: ruby:2.3
+
+before_script:
+  - gem install bundler jekyll
+
+pages:
+  stage: deploy
+  script:
+  - bundle exec jekyll build -d _site
+  artifacts:
+    paths:
+    - _site
+  only:
+  - gh-pages
