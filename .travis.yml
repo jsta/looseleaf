@@ -7,4 +7,7 @@ rvm:
 script:
   - jekyll build
 
+after_success:
+  - zip -r looseleaf.zip _site
+
 sudo: false # route your build to the container-based infrastructure for a faster build
