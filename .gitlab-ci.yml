@@ -4,7 +4,6 @@ before_script:
   - gem install bundler jekyll
 
 pages:
-  stage: deploy
   script:
   - jekyll build
   artifacts:
