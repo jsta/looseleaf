@@ -6,6 +6,9 @@ branches:
   only:
   - gh-pages
 
+install:
+  - gem install bundler jekyll
+
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
 script:
