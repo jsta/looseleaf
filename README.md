@@ -37,13 +37,17 @@ See https://jsta.github.io/looseleaf/setup.html
 
 ### Workflow
 
-* Create an Rmd file with the yaml header and chunk options in the template
+1. Create an Rmd file with the yaml header and chunk options in the template
 
-* `make looseleaf-md`
+2. `make looseleaf-md`
 
-* `make serve`
+3. Render to html (3 options)
 
-## Customization
+  * locally using `make serve`
+  
+  * remotely for public repos by enabling Github pages
+  
+  * remotely for private repos by building a zip file on **Gitlab** CI (see `.gitlab-ci.yml`)
 
 ## Prior art
 
