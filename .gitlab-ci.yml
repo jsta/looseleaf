@@ -6,7 +6,7 @@ before_script:
 pages:
   stage: deploy
   script:
-  - bundle exec jekyll build -d _site
+  - jekyll build
   artifacts:
     paths:
     - _site
