@@ -37,11 +37,11 @@ Research compendium template for tracking, linking, and sharing data exploration
 
 3. Render to html (3 options)
 
-  * locally using `make serve` (see optional system dependencies in [setup.md](setup.md#dependencies-for-all-looseleaf-projects))
+    * locally using `make serve` (see optional system dependencies in [setup.md](setup.md#dependencies-for-all-looseleaf-projects))
   
-  * remotely for public repos by enabling Github pages
+    * remotely for public repos by enabling Github pages
   
-  * remotely for private repos by building a zip file on **Gitlab** CI (see `.gitlab-ci.yml`)
+    * remotely for private repos by building a zip file on **Gitlab** CI (see `.gitlab-ci.yml`)
 
 ## Prior art
 
