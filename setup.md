@@ -3,7 +3,8 @@ layout: page
 title: Setup
 root: .
 ---
-> ## Dependencies for rendering looseleaf pages
+
+> ## Dependencies for **all** looseleaf projects
 >
 > * R packages
 >   * rmarkdown
@@ -12,13 +13,13 @@ root: .
 >   * checkpoint
 {: .prereq}
 
-## CRAN Dependencies
-
-Place additional CRAN dependencies in the `Imports` field in `DESCRIPTION`. These are automatically checked for and installed on build.
-
-## Github Dependencies
-
-Place additional Github dependencies in the `Remotes` field in `DESCRIPTION`. These **are not** automatically installed on build. Run the `remotes::install_deps` command to install.
+> ## Dependencies for **specific** looseleaf projects
+>
+> * CRAN Dependencies
+>   * Place additional CRAN dependencies in the `Imports` field in `DESCRIPTION`. These are automatically checked for and installed on build.
+> * Github Dependencies
+>   * Place additional Github dependencies in the `Remotes` field in `DESCRIPTION`. These **are not** automatically installed on build. Run the `remotes::install_deps` command to install.
+{: .prereq}
 
 > ## Optional dependencies for local serving of looseleaf html
 >

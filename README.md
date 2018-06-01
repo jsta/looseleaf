@@ -31,13 +31,13 @@ Research compendium template for tracking, linking, and sharing data exploration
 
 1. Create an Rmd file with the yaml header and chunk options in the template
 
-2. Add package dependencies in `DESCRIPTION`
+2. Add package dependencies to [DESCRIPTION](DESCRIPTION)
 
-2. Call `make looseleaf-md` from the command line (see [setup](setup.md))
+2. Call `make looseleaf-md` from the command line (see required R packages in [setup](setup.md))
 
-3. Render to html (3 options, see [setup](setup.md))
+3. Render to html (3 options)
 
-  * locally using `make serve`
+  * locally using `make serve` (see required system dependencies in [setup](setup.md))
   
   * remotely for public repos by enabling Github pages
   
