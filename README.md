@@ -7,9 +7,9 @@ Research compendium template for tracking, linking, and sharing data exploration
 
 ### Motivation
 
-`R notebooks` are ok but it is difficult to manage a linked collection.
+It is difficult to manage a linked collection of [R notebooks](https://rmarkdown.rstudio.com/r_notebooks.html).
 
-`bookdown` is great except for a few key downsides arising from the fact that chapters are concatenated on render so that chunk labels cannot be duplicated, selective caching becomes difficult, and there can be no chapter level knitr hooks.
+[bookdown](https://bookdown.org/yihui/bookdown/) is great except for a few key downsides arising from the fact that chapters are concatenated on render so that chunk labels cannot be duplicated, selective caching becomes difficult, and there can be no chapter level knitr hooks.
 
 ## Features
 
@@ -29,9 +29,9 @@ Research compendium template for tracking, linking, and sharing data exploration
 
 ### Workflow
 
-1. Create an Rmd file with the yaml header and chunk options in the template
+1. Create an Rmd file with the yaml header and chunk options in the provided [template](_episodes_rmd/99-mtcars.Rmd)
 
-2. Add package dependencies to [DESCRIPTION](DESCRIPTION)
+2. Add CRAN and Github package dependencies to [DESCRIPTION](DESCRIPTION)
 
 2. Call `make looseleaf-md` from the command line (see required R packages for all projects in [setup.md](setup.md#dependencies-for-all-looseleaf-projects))
 
