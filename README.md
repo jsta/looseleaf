@@ -33,11 +33,11 @@ Research compendium template for tracking, linking, and sharing data exploration
 
 2. Add package dependencies to [DESCRIPTION](DESCRIPTION)
 
-2. Call `make looseleaf-md` from the command line (see required R packages in [setup](setup.md))
+2. Call `make looseleaf-md` from the command line (see required R packages for all projects in [setup.md](setup.md#dependencies-for-all-looseleaf-projects))
 
 3. Render to html (3 options)
 
-  * locally using `make serve` (see required system dependencies in [setup](setup.md))
+  * locally using `make serve` (see required system dependencies in [setup.md](setup.md#dependencies-for-all-looseleaf-projects))
   
   * remotely for public repos by enabling Github pages
   
