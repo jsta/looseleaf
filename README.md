@@ -3,11 +3,13 @@
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![Build Status](https://travis-ci.com/jsta/looseleaf.svg?branch=gh-pages)](https://travis-ci.com/jsta/looseleaf)
 
-Separately render and index a collection of rmarkdown files
+Research compendium template for tracking, linking, and sharing data explorations
 
-## Philosophy 
+### Motivation
 
-Keep track of your data explorations with minimal effort
+`R notebooks` are ok but it is difficult to manage a linked collection.
+
+`bookdown` is great except for a few key downsides arising from the fact that chapters are concatenated on render so that chunk labels cannot be duplicated, selective caching becomes difficult, and there can be no chapter level knitr hooks.
 
 ## Features
 
@@ -19,16 +21,6 @@ Keep track of your data explorations with minimal effort
 
 * keep track of `R` package dependencies in `DESCRIPTION`
 
-### Why not X?
-
-`R notebooks` are ok but it is difficult to manage a linked collection.
-
-`bookdown` is great except for a few key downsides arising from the fact that chapters are concatenated on render so that chunk labels cannot be duplicated, selective caching becomes difficult, and there can be no chapter level knitr hooks.
-
-## Installation
-
-See https://jsta.github.io/looseleaf/setup.html
-
 ## Usage
 
 * Clone this repo
@@ -39,9 +31,11 @@ See https://jsta.github.io/looseleaf/setup.html
 
 1. Create an Rmd file with the yaml header and chunk options in the template
 
-2. `make looseleaf-md`
+2. Add package dependencies in `DESCRIPTION`
 
-3. Render to html (3 options)
+2. Call `make looseleaf-md` from the command line (see [setup](setup.md))
+
+3. Render to html (3 options, see [setup](setup.md))
 
   * locally using `make serve`
   
