@@ -37,7 +37,7 @@ Research compendium template for tracking, linking, and sharing data exploration
 
 3. Render to html (3 options)
 
-  * locally using `make serve` (see required system dependencies in [setup.md](setup.md#dependencies-for-all-looseleaf-projects))
+  * locally using `make serve` (see optional system dependencies in [setup.md](setup.md#dependencies-for-all-looseleaf-projects))
   
   * remotely for public repos by enabling Github pages
   
