@@ -29,7 +29,7 @@ It is difficult to manage a linked collection of [R notebooks](https://rmarkdown
 
 ## Example
 
-https://jsta.github.io/looseleaf
+[https://jsta.github.io/looseleaf](https://jsta.github.io/looseleaf)
 
 ## Usage
 

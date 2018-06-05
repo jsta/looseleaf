@@ -19,13 +19,15 @@
       {% endif %}
 
       {% comment %} Always show link to home page. {% endcomment %}
-      <a class="navbar-brand" href="{{ page.root }}{% link index.md %}">Home</a>
+      <a class="navbar-brand" href="{{ page.root }}{% link index.md %}">Index</a>
 
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
 
         {% if site.kind == "lesson" %}
+  {% comment %} Show README. {% endcomment %}
+        <li><a href="{{ page.root }}{% link README.md %}">Overview</a></li>
 	{% comment %} Show setup instructions. {% endcomment %}
         <li><a href="{{ page.root }}{% link setup.md %}">Setup</a></li>
 
