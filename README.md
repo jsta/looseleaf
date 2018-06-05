@@ -21,6 +21,10 @@ It is difficult to manage a linked collection of [R notebooks](https://rmarkdown
 
 * keep track of `R` package dependencies in `DESCRIPTION`
 
+## Example
+
+https://jsta.github.io/looseleaf
+
 ## Usage
 
 * Clone this repo
